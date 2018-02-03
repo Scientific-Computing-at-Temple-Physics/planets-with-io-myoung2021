@@ -5,9 +5,37 @@ Created on Tue Jan 30 17:05:49 2018
 
 @author: mitchellyoung
 """
+name='Mercury'
+
+words=[]
 #http://interactivepython.org/runestone/static/pip/Files/files.html
-data=open("planet_data.dat","r")
-for row in data:
-    values = row.split()
-    print(values[0])
-for 
+with open("planet_data.dat","r") as doc:
+    data=doc.readlines()
+    
+for line in data:
+    words=(line.split())
+    #if name in words:
+    print words
+
+
+"""
+list_locs=[]
+
+for line in data:   
+    location=line.find(name)
+    list_locs.append(location)
+    testing=line[location:len(name)+location]
+    
+    print testing
+    
+    
+#location=data.index(name)
+
+
+
+ 
+  #  if words==name+";":
+#data=open("planet_data.dat","r")
+"""
+
+
